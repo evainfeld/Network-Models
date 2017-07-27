@@ -56,7 +56,7 @@ def AddNode(X):
 def ProbabilityDistribution(X):
     global c
     w=c
-    w=w
+    w=w #Here you can add a coefficient to vary the contribution of common neighbors. Make it 0*w for a standard PA mdel.
     PD=[]
     sum=0
     for j in range(0,n-1):
