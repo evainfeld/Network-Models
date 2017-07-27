@@ -3,6 +3,18 @@
 Created on Thu Jul 20 14:37:16 2017
 
 @author: eva
+
+Preferential attachment with added transitivity
+
+This generates a "transitive preferential attachment" network - it is based on the classic preferential attachment model, but a new node x attaches to nodes y based on two criteria:
+
+   - existing degree of y,
+   - if x already has common neighbors with y, it's more likely to attach to y.
+
+So while in the PA model "the rich get richer," here "the rich get richer and make their friends richer."
+
+
+
 """
 
 import random
